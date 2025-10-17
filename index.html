@@ -4,13 +4,22 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Captcha Solver</title>
+<style>
+  body { font-family: Arial, sans-serif; margin: 20px; }
+  #captcha-img { max-width: 100%; border: 1px solid #ccc; }
+  #result { margin-top: 10px; font-weight: bold; }
+  button { padding: 8px 12px; margin-top: 10px; }
+</style>
 </head>
 <body>
 <h1>Captcha Solver</h1>
-<p>Enter image URL:</p>
-<input type="text" id="imageUrl" style="width:80%;" placeholder="https://.../image.png" />
-<button id="solveBtn">Solve Captcha</button>
-<p id="result"></p>
+<p>Enter the URL of the captcha image (or use default):</p>
+<input type="text" id="image-url" placeholder="https://.../image.png" style="width: 80%;" />
+<br/><button id="load-btn">Load Image</button>
+<br/>
+<img id="captcha-img" src="sample.png" alt="Captcha Image" />
+<div id="result"></div>
+<button id="solve-btn">Solve Captcha</button>
 <script src="script.js"></script>
 </body>
 </html>
