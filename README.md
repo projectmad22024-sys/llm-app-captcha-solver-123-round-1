@@ -1,29 +1,24 @@
-# CAPTCHA Solver
+# Captcha Solver Web Application
 
-This web application allows users to input the URL of a captcha image and attempts to solve it automatically.
+## Overview
+This simple web application allows users to input a URL of a captcha image (defaulting to sample.png), loads the image, and simulates solving the captcha. It demonstrates how to fetch an image, convert it to base64, and integrate a mocked captcha solver.
 
 ## Features
-- Enter a captcha image URL (default or custom).
-- Sends the image URL to a backend API that processes and returns the captcha solution.
-- Displays the solved captcha text to the user.
+- Enter custom captcha image URL or use the default sample.
+- Load and display the captcha image.
+- Click 'Solve Captcha' to receive a mocked solution.
+- Designed as a single-page application.
 
 ## How to Run
-1. Save all files in a directory.
-2. Open `index.html` in your web browser.
-3. Enter the URL of a captcha image in the input box or use the default.
-4. Click 'Solve Captcha' to see the solution.
+1. Ensure the sample.png image is in the same directory.
+2. Open `index.html` in a modern web browser.
+3. Enter a captcha image URL if desired or use the default.
+4. Click 'Load Image' to display the image.
+5. Click 'Solve Captcha' to simulate solving.
 
-> Note: This implementation sends requests to `https://api.example.com/solve-captcha`, which is a placeholder. Replace it with the actual captcha solving API endpoint.
-
-## Note
-- This is a simple demonstration. For production, implement proper error handling and security measures.
-
----
+## Notes
+- The captcha solver used here is a mock and always returns '1234'.
+- Extend it to incorporate real OCR or API calls for actual solving.
 
 ## License
-
-MIT License
-
-Copyright (c) 2023
-
-Permission is hereby granted, free of charge, to any person obtaining a copy ... (MIT License continues from standard full text below)
+See `LICENSE` file for licensing details.
